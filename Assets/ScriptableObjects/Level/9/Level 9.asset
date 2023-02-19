@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99318d14bbe19943afaccb9eb6367eb, type: 3}
+  m_Name: Level 9
+  m_EditorClassIdentifier: 
+  DataRecipe: {fileID: 11400000, guid: b9082c17d6a2c8148943e597e798ed07, type: 2}
+  DataSpawnObjects: {fileID: 11400000, guid: e0548a7e8e187a142bb63c707a7a4bc3, type: 2}
+  TimeSpawn: 0.8
+  TimeLevel: 45
