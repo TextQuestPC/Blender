@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class ManagerCanvaces : Singleton<ManagerCanvaces>
 {
@@ -87,6 +88,7 @@ public class ManagerCanvaces : Singleton<ManagerCanvaces>
 
     public void ShowLevelText(int numberText)
     {
+        numberText = YandexGame.savesData.CurrentLevel;
         levelText.text = strLevel + numberText;
         StartCoroutine(CoShowLevelText());
     }

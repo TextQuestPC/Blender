@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class ManagerLevel : Singleton<ManagerLevel>
 {
     [SerializeField] private DataLevel[] levels;
-    [SerializeField] private int currentNumberLevel = 0;
+    [SerializeField] private int currentNumberLevel = YandexGame.savesData.CurrentLevel;
 
     private DataRecipe currentRecipe;
     private DataNeedFruit dataNeedFruit;
@@ -20,13 +21,31 @@ public class ManagerLevel : Singleton<ManagerLevel>
     private bool waitTutor = false;
     public bool SetWaitTutor { set => waitTutor = value; }
 
+    //private void Start()
+    //{
+    //    currentNumberLevel = YandexGame.savesData.CurrentLevel;
+    //}
+    private void OnEnable()
+    {
+        YandexGame.OpenFullAdEvent += NextLevel;
+        //YandexGame.GetDataEvent += OnGetData;
+    }
+
+    private void OnDisable()
+    {
+        YandexGame.OpenFullAdEvent -= NextLevel;
+        //YandexGame.GetDataEvent -= OnGetData;
+    }
     /// <summary>
     /// Init Следующего level
     /// </summary>
     public void NextLevel()
     {
         waitTutor = false;
-
+        currentNumberLevel = ManagerSaveLoad.Instance.LoadLevel();
+        YandexGame.savesData.CurrentLevel = currentNumberLevel;
+        YandexGame.SaveProgress();
+        //YandexGame.savesData.CurrentLevel = ManagerSaveLoad.Instance.LoadLevel();
         ManagerTutorial.Instance.CheckLevel(currentNumberLevel);
 
         if (!waitTutor)

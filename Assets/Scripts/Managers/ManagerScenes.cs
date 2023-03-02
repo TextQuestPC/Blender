@@ -9,12 +9,12 @@ public class ManagerScenes : DontDestroySingleton<ManagerScenes>
     public void LoadGameScene()
     {
         isGameScene = true;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void LoadMenuScene()
     {
         isGameScene = false;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

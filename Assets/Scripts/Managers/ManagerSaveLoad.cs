@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
+using YG;
 
 public class ManagerSaveLoad : DontDestroySingleton<ManagerSaveLoad>
 {
     private const string levelName = "Level";
     private const string musicName = "Music";
     private const string soundName = "Sound";
-
     public void SaveLevel(int level)
     {
         PlayerPrefs.SetInt(levelName, level);

@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
+using YG;
 
 public class CanvasMenuScene : Singleton<CanvasMenuScene>
 {
     [SerializeField] private GameObject mainButtons;
     [SerializeField] private GameObject startButtons;
-
     public void ClickFirstStart()
     {
         if(ManagerSaveLoad.Instance.LoadLevel() > 0)

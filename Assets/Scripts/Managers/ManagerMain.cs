@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using YG;
 
 public class ManagerMain : Singleton<ManagerMain>
 {
@@ -14,6 +15,7 @@ public class ManagerMain : Singleton<ManagerMain>
 #if !UNITY_EDITOR
         ManagerLevel.Instance.SetCurrentNumberLevel = ManagerSaveLoad.Instance.LoadLevel();
 #endif
+        YandexGame.SaveProgress();
         ManagerLevel.Instance.NextLevel();
         ManagerStates.Instance.ChangeStateGame(TypeStateGame.Game);
     }

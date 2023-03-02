@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class SettingsPanel : Singleton<SettingsPanel>
 {
     [SerializeField] private GameObject panel;
-    [SerializeField] private Text scoreText;
+    [SerializeField] public Text scoreText;
     [SerializeField] private GameObject inMenuButton;
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider soundSlider;
@@ -13,8 +14,23 @@ public class SettingsPanel : Singleton<SettingsPanel>
     private const string textEndLevels = "Пройдено: ";
     private float timeHide = .35f;
 
+    //private void OnEnable()
+    //{
+    //    YandexGame.OpenFullAdEvent += ShowPanel;
+    //    //YandexGame.GetDataEvent += OnGetData;
+    //}
+
+    //private void OnDisable()
+    //{
+    //    YandexGame.OpenFullAdEvent -= ShowPanel;
+    //    //YandexGame.GetDataEvent -= OnGetData;
+    //}
+
     private void Start()
     {
+        YandexGame.savesData.CurrentLevel = ManagerSaveLoad.Instance.LoadLevel();
+        YandexGame.SaveProgress();
+
         musicSlider.value = ManagerSaveLoad.Instance.LoadMusicVolume();
         soundSlider.value = ManagerSaveLoad.Instance.LoadSoundVolume();
 
@@ -42,6 +58,7 @@ public class SettingsPanel : Singleton<SettingsPanel>
         {
             ManagerCanvaces.Instance.HideSettingsButton();
         }
+        scoreText.text += ManagerSaveLoad.Instance.LoadLevel();
     }
 
     public void HidePanel()
