@@ -38,15 +38,24 @@ public class ConSwipeTap : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            Touch touch = Input.touches[0];
+            //Touch touch = Input.touches[0];
 
-            if (touch.phase == TouchPhase.Began)
+            //if (touch.phase == TouchPhase.Began)
+            //{
+            //    startSwipePoint = touch.position;
+            //}
+            //else if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
+            //{
+            //    endSwipePoint = touch.position;
+            //    CalculateSwipe();
+            //}
+            if (Input.GetMouseButtonDown(0))
             {
-                startSwipePoint = touch.position;
+                startSwipePoint = Input.mousePosition;
             }
-            else if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
+            else if (Input.GetMouseButtonUp(0))
             {
-                endSwipePoint = touch.position;
+                endSwipePoint = Input.mousePosition;
                 CalculateSwipe();
             }
         }
