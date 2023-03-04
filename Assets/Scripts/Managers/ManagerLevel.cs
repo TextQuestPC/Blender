@@ -20,21 +20,18 @@ public class ManagerLevel : Singleton<ManagerLevel>
 
     private bool waitTutor = false;
     public bool SetWaitTutor { set => waitTutor = value; }
-
     //private void Start()
     //{
-    //    currentNumberLevel = YandexGame.savesData.CurrentLevel;
+    //    AppManager.Instance.ShowAd();
     //}
     private void OnEnable()
     {
-        YandexGame.OpenFullAdEvent += NextLevel;
-        //YandexGame.GetDataEvent += OnGetData;
+        YandexGame.OpenFullAdEvent += SetSpawnData;
     }
 
     private void OnDisable()
     {
-        YandexGame.OpenFullAdEvent -= NextLevel;
-        //YandexGame.GetDataEvent -= OnGetData;
+        YandexGame.OpenFullAdEvent -= SetSpawnData;
     }
     /// <summary>
     /// Init Следующего level
