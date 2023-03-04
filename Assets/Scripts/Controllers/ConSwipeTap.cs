@@ -36,28 +36,31 @@ public class ConSwipeTap : MonoBehaviour
 
     private void CheckMobileTouch()
     {
-        if (Input.touchCount > 0)
-        {
-            //Touch touch = Input.touches[0];
+        //if (Input.touchCount > 0)
+        //{
+        //    Touch touch = Input.touches[0];
 
-            //if (touch.phase == TouchPhase.Began)
-            //{
-            //    startSwipePoint = touch.position;
-            //}
-            //else if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
-            //{
-            //    endSwipePoint = touch.position;
-            //    CalculateSwipe();
-            //}
-            if (Input.GetMouseButtonDown(0))
-            {
-                startSwipePoint = Input.mousePosition;
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                endSwipePoint = Input.mousePosition;
-                CalculateSwipe();
-            }
+        //    if (touch.phase == TouchPhase.Began)
+        //    {
+        //        startSwipePoint = touch.position;
+        //    }
+        //    else if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
+        //    {
+        //        endSwipePoint = touch.position;
+        //        CalculateSwipe();
+        //    }
+
+        //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            //Debug.Log("ButtonDown");
+            startSwipePoint = Input.mousePosition;
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            //Debug.Log("ButtonUp");
+            endSwipePoint = Input.mousePosition;
+            CalculateSwipe();
         }
     }
 
@@ -65,10 +68,12 @@ public class ConSwipeTap : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //Debug.Log("ButtonDown");
             startSwipePoint = Input.mousePosition;
         }
         else if (Input.GetMouseButtonUp(0))
         {
+            //Debug.Log("ButtonUp");
             endSwipePoint = Input.mousePosition;
             CalculateSwipe();
         }
