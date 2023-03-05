@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class ResultPanel : MonoBehaviour
 {
@@ -11,14 +12,22 @@ public class ResultPanel : MonoBehaviour
 
     private const float timeHide = 0.3f;
 
-    private const string winText = "Победа!";
+    [SerializeField] private GameObject textResultWin;
+    [SerializeField] private GameObject textResultLoseTree;
+    [SerializeField] private GameObject textResultLoseTime;
+
+    //private const string winText = "Победа!";
     private const string loseTextTree = "Проиграл. Деревья блендер не сможет порезать.";
     private const string loseTextTime = "Проиграл. Время вышло.";
-    private const string loseTextTime2 = "Проиграл. Следи за счётчиком времени!";
+    //private const string loseTextTime2 = "Проиграл. Следи за счётчиком времени!";
 
     public void ShowWinPanel()
     {
-        textResult.text = winText;
+        //textResult.text = winText;
+        textResultWin.SetActive(true);
+        textResultLoseTree.SetActive(false);
+        textResultLoseTime.SetActive(false);
+
         nextLevelButton.SetActive(true);
         restartLevelButton.SetActive(false);
 
@@ -43,19 +52,23 @@ public class ResultPanel : MonoBehaviour
         if (typeLose == TypeLoseLevel.DamagerTree)
         {
             text = loseTextTree;
+            textResultWin.SetActive(false);
+            textResultLoseTree.SetActive(true);
+            textResultLoseTime.SetActive(false);
         }
         else if (typeLose == TypeLoseLevel.EndTimeLevel)
         {
             text = loseTextTime;
+            textResultWin.SetActive(false);
+            textResultLoseTree.SetActive(false);
+            textResultLoseTime.SetActive(true);
         }
 
-        if(text == "")
+        if (text == "")
         {
             Debug.LogError($"Не присвоено значение textResult. Тип проигыши {typeLose}");
         }
-
-        textResult.text = text;
-
+        //textResult.text = text;
     }
 
     public void HidePanel()
