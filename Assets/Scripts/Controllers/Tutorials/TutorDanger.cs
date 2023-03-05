@@ -1,8 +1,14 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorDanger : MonoBehaviour
 {
+    //public Text textDanderTree/* = "Дерево опасно!"*/;
+    //public Text textDanderIce /*= "Лёд замораживает!"*/;
+    //public Text textDanderTime/* = "Следи за временем, что бы успеть!"*/;
+    //public Text textDanderBonusTime /*= "Собирай бонусы время, что бы успеть!"*/;
+
     private string textDanderTree = "Дерево опасно!";
     private string textDanderIce = "Лёд замораживает!";
     private string textDanderTime = "Следи за временем, что бы успеть!";

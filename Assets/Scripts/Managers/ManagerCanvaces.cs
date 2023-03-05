@@ -89,6 +89,7 @@ public class ManagerCanvaces : Singleton<ManagerCanvaces>
     public void ShowLevelText(int numberText)
     {
         numberText = YandexGame.savesData.CurrentLevel;
+        //numberText = ManagerSaveLoad.Instance.LoadLevel() + 1;
         levelText.text = strLevel + numberText;
         StartCoroutine(CoShowLevelText());
     }
@@ -96,6 +97,7 @@ public class ManagerCanvaces : Singleton<ManagerCanvaces>
     private IEnumerator CoShowLevelText()
     {
         levelText.gameObject.SetActive(true);
+        levelText.text += ManagerSaveLoad.Instance.LoadLevel() + 1;
         yield return new WaitForSeconds(timeShowLevelText);
         levelText.gameObject.SetActive(false);
     }

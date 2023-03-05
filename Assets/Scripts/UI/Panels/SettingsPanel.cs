@@ -28,7 +28,7 @@ public class SettingsPanel : Singleton<SettingsPanel>
 
     private void Start()
     {
-        YandexGame.savesData.CurrentLevel = ManagerSaveLoad.Instance.LoadLevel();
+        YandexGame.savesData.CurrentLevel += ManagerSaveLoad.Instance.LoadLevel() + 1;
         YandexGame.SaveProgress();
 
         musicSlider.value = ManagerSaveLoad.Instance.LoadMusicVolume();
@@ -40,7 +40,7 @@ public class SettingsPanel : Singleton<SettingsPanel>
 
     public void ShowPanel()
     {
-        scoreText.text = textEndLevels + ManagerSaveLoad.Instance.LoadLevel();
+        scoreText.text = textEndLevels + ManagerSaveLoad.Instance.LoadLevel() + 1;
 
         if (ManagerScenes.Instance.GetIsGameScene)
         {
