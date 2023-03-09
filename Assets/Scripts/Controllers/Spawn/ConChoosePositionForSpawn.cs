@@ -14,11 +14,11 @@ public class ConChoosePositionForSpawn : MonoBehaviour
         }
         else
         {
-            int rnd = Random.Range(0, pointsSpawn.Length);
+            int rnd = Random.Range(0, LinesCount.Instance.GetCountLines);
 
             while (rnd == prevNumberPoints)
             {
-                rnd = Random.Range(0, pointsSpawn.Length);
+                rnd = Random.Range(0, LinesCount.Instance.GetCountLines - 1);
             }
 
             prevNumberPoints = rnd;

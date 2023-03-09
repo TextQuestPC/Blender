@@ -5,10 +5,10 @@ public class BlenderMovement : ObjectMovement
     public delegate void EndMove();
     public event EndMove AfterEndMove;
 
-    [SerializeField] public float[] positions;
+    //[SerializeField] public float[] positions;
     [SerializeField] private BlenderAnimation blenderAnimation;
 
-    public int numberCurrentLine;
+    public int numberCurrentLine = 0;
 
     public void MoveToLine(int numberLine)
     {
@@ -20,7 +20,7 @@ public class BlenderMovement : ObjectMovement
     {
         if (right)
         {
-            if(numberCurrentLine < positions.Length - 1)
+            if(numberCurrentLine < LinesCount.Instance.GetCountLines - 1)
             {
                 numberCurrentLine++;
                 blenderAnimation.SwipeRight();
@@ -49,7 +49,7 @@ public class BlenderMovement : ObjectMovement
     private void SetNextPosition()
     {
         Vector3 newPos = transform.position;
-        newPos.x = positions[numberCurrentLine];
+        newPos.x = LinesCount.Instance.GetPositionLine(numberCurrentLine);
         nextPos = newPos;
         canMove = true;
     }

@@ -44,6 +44,7 @@ public class ManagerLevel : Singleton<ManagerLevel>
         YandexGame.SaveProgress();
         //YandexGame.savesData.CurrentLevel = ManagerSaveLoad.Instance.LoadLevel();
         ManagerTutorial.Instance.CheckLevel(currentNumberLevel);
+        LinesCount.Instance.Init(levels[currentNumberLevel].CountLines);
 
         if (!waitTutor)
         {

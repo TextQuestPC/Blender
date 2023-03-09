@@ -7,4 +7,5 @@ public class DataLevel : ScriptableObject
     public DataSpawnObjects DataSpawnObjects;
     public float TimeSpawn = 1.5f;
     public float TimeLevel = 15f;
+    public int CountLines = 4;
 }
