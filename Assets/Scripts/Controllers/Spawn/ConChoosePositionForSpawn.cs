@@ -2,7 +2,7 @@
 
 public class ConChoosePositionForSpawn : MonoBehaviour
 {
-    [SerializeField] private GameObject[] pointsSpawn;
+    [SerializeField] public GameObject[] pointsSpawn;
 
     private int prevNumberPoints = 0;
 

@@ -11,9 +11,23 @@ public class LanguageButton : MonoBehaviour
     //public string lang1;
     //public string lang2;
     //bool activ = false;
-    //private void Start()
+    //private void Update()
     //{
-    //    settingsPanel.scoreText.text += ManagerSaveLoad.Instance.LoadLevel();
+    //    languageYG = FindObjectsOfType<LanguageYG>();
+    //    if (activ)
+    //    {
+    //        for (int i = 0; i < languageYG.Length; i++)
+    //        {
+    //            languageYG[i].SwitchLanguage(lang1);
+    //        }
+    //    }
+    //    if (!activ)
+    //    {
+    //        for (int i = 0; i < languageYG.Length; i++)
+    //        {
+    //            languageYG[i].SwitchLanguage(lang2);
+    //        }
+    //    }
     //}
     public void buttonLanguage()
     {

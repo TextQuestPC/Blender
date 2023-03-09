@@ -11,6 +11,8 @@ public class ManagerSpawner : Singleton<ManagerSpawner>
     private int countBeforeDoubleSpawn = 0;
     private int countBeforeTripleSpawn = 3;
 
+    public int countObjectOperation;
+
     /// <summary>
     /// Установить Objects, которые будет спауниться на уровне
     /// </summary>
@@ -62,7 +64,7 @@ public class ManagerSpawner : Singleton<ManagerSpawner>
 
     public void CreateObjectsInAllLines()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < countObjectOperation; i++)
         {
             CreateObject(i);
         }
@@ -92,7 +94,7 @@ public class ManagerSpawner : Singleton<ManagerSpawner>
     {
         int noSpawnLine = Random.Range(0, 3);
 
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < countObjectOperation; i++)
         {
             if (i != noSpawnLine)
             {

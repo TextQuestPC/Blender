@@ -5,10 +5,10 @@ public class BlenderMovement : ObjectMovement
     public delegate void EndMove();
     public event EndMove AfterEndMove;
 
-    [SerializeField] private float[] positions;
+    [SerializeField] public float[] positions;
     [SerializeField] private BlenderAnimation blenderAnimation;
 
-    private int numberCurrentLine;
+    public int numberCurrentLine;
 
     public void MoveToLine(int numberLine)
     {
