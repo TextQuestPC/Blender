@@ -1,0 +1,403 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.16f1 (559fc0ec6670) revision 5611456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ru' Physical Memory: 32633 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\programm\Unity Hub\Unity Vers\2021.2.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/artem/OneDrive/Документы/Blender
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+53835
+Successfully changed project path to: C:/Users/artem/OneDrive/Документы/Blender
+C:/Users/artem/OneDrive/Документы/Blender
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 71.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.16f1 (559fc0ec6670)
+[Subsystems] Discovering subsystems at path E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/artem/OneDrive/Документы/Blender/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/Managed'
+Mono path[1] = 'E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: E:/programm/Unity Hub/Unity Vers/2021.2.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003109 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 63.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.501 seconds
+Domain Reload Profiling:
+	ReloadAssembly (501ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (370ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (81ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (83ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004050 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\artem\OneDrive\Документы\Blender\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\artem\OneDrive\Документы\Blender\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Domain Reload Profiling:
+	ReloadAssembly (831ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (178ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3267 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (56.7 KB). Loaded Objects now: 3681.
+Memory consumption went from 113.2 MB to 113.1 MB.
+Total: 2.561800 ms (FindLiveObjects: 0.204300 ms CreateObjectMapping: 0.157800 ms MarkObjects: 2.149200 ms  DeleteObjects: 0.049800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4330.223787 seconds.
+  path: Assets/ScriptableObjects/Level/4/SpawnDamager_Wood.asset
+  artifactKey: Guid(53a1e2b482935c44fa98de596e64fea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/4/SpawnDamager_Wood.asset using Guid(53a1e2b482935c44fa98de596e64fea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf937122cd36e1f3306b9a7093a7b228') in 0.027456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.342786 seconds.
+  path: Assets/ScriptableObjects/Level/5/SmallBonusTime.asset
+  artifactKey: Guid(8b1498b427e540a4aaef4fb0eed9d564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/5/SmallBonusTime.asset using Guid(8b1498b427e540a4aaef4fb0eed9d564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280044eb68155cbe98dde8d0f12a82ba') in 0.008705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/5/SpawnFruit_Kiwi.asset
+  artifactKey: Guid(03c21beaf6dd7ef4baf068f2b90a7b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/5/SpawnFruit_Kiwi.asset using Guid(03c21beaf6dd7ef4baf068f2b90a7b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdda6d7c0d7ec528d817efaead9e9df7') in 0.001790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.828061 seconds.
+  path: Assets/ScriptableObjects/Level/6/SpawnDamage_Ice.asset
+  artifactKey: Guid(d806b3b312d479649b129ffc9c782e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/6/SpawnDamage_Ice.asset using Guid(d806b3b312d479649b129ffc9c782e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abce79e80df0b216a342a9b6d4c94d4e') in 0.004143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/6/SpawnObjects.asset
+  artifactKey: Guid(a8ec45e9135e87d4fbad7844513baca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/6/SpawnObjects.asset using Guid(a8ec45e9135e87d4fbad7844513baca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5ec6b74b66b5829bec389ad37bb55a') in 0.002597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ScriptableObjects/Level/6/SpawnFruit_Kiwi.asset
+  artifactKey: Guid(d4678192fd21ab74ebae86f2a764d2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/6/SpawnFruit_Kiwi.asset using Guid(d4678192fd21ab74ebae86f2a764d2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daff2c823ca3da79c32f890d5c001bc3') in 0.001823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.008251 seconds.
+  path: Assets/ScriptableObjects/Level/7/Recipe.asset
+  artifactKey: Guid(5697440a590f6684d8fb5f177e263a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/7/Recipe.asset using Guid(5697440a590f6684d8fb5f177e263a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34609a5c252d399d21ac48aa8123abe7') in 0.002150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ScriptableObjects/Level/7/SpawnObjects.asset
+  artifactKey: Guid(e6539e66b5e23dd44904cd2b78c5f1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/7/SpawnObjects.asset using Guid(e6539e66b5e23dd44904cd2b78c5f1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b3c5fe24748400f91dac4dda5a2a17') in 0.002325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/7/SpawnDamager_Ice.asset
+  artifactKey: Guid(d1aa4a7aba4a7ff42aaf55b12a228cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/7/SpawnDamager_Ice.asset using Guid(d1aa4a7aba4a7ff42aaf55b12a228cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc27e35b4bbf5a73629662101e0ad83') in 0.004396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.167260 seconds.
+  path: Assets/ScriptableObjects/Level/8/PartRecipe_Watermelon.asset
+  artifactKey: Guid(fbbfedda5b6fc65488a94c3535cada6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/8/PartRecipe_Watermelon.asset using Guid(fbbfedda5b6fc65488a94c3535cada6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3aed73d7ee8fb054ade6185e443bdcd') in 0.005161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/8/SpawnFruit_Watermelon.asset
+  artifactKey: Guid(cd8c6353ecb307c479a0d88b38e9bdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/8/SpawnFruit_Watermelon.asset using Guid(cd8c6353ecb307c479a0d88b38e9bdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb7dc1b3c8a2a667f566fa6004101eb') in 0.004870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/8/SpawnDamager_Tree.asset
+  artifactKey: Guid(d43b5fd71998ca846b98a510bb66fadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/8/SpawnDamager_Tree.asset using Guid(d43b5fd71998ca846b98a510bb66fadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0752c2d91af4bebb791a9169e2a35b2c') in 0.001775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.370434 seconds.
+  path: Assets/ScriptableObjects/Level/9/Recipe.asset
+  artifactKey: Guid(b9082c17d6a2c8148943e597e798ed07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/9/Recipe.asset using Guid(b9082c17d6a2c8148943e597e798ed07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b5d3c66123d2982bf66a051630fe40') in 0.001689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/9/SpawnFruit_Banana.asset
+  artifactKey: Guid(87499b9ba1c04c1438fde184dc33054f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/9/SpawnFruit_Banana.asset using Guid(87499b9ba1c04c1438fde184dc33054f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71cb58cdc37705e0a9cbc248e20e3058') in 0.001748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/9/SpawnDamager_Ice.asset
+  artifactKey: Guid(d43e2fa6503c0524383bc2774ff93775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/9/SpawnDamager_Ice.asset using Guid(d43e2fa6503c0524383bc2774ff93775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5323dc01036fc04a0eabffe33d65038d') in 0.001593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.046243 seconds.
+  path: Assets/ScriptableObjects/Level/10/Level 10.asset
+  artifactKey: Guid(2a56eea3c4585a14d8d547172dcb5507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/10/Level 10.asset using Guid(2a56eea3c4585a14d8d547172dcb5507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615f4208f19225b28e50f8e0375d7479') in 0.006419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ScriptableObjects/Level/10/Recipe.asset
+  artifactKey: Guid(02fa488f2a32c1549a039ac6c3c5de95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/10/Recipe.asset using Guid(02fa488f2a32c1549a039ac6c3c5de95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628e648ac73a8770ecbb221c456f3bf3') in 0.002172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/10/SpawnFruit_Orange.asset
+  artifactKey: Guid(842ee98d96de45b4793af23f7fbc184c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/10/SpawnFruit_Orange.asset using Guid(842ee98d96de45b4793af23f7fbc184c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b0900d15bc166bf5c99c21f3e35067') in 0.001573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/ScriptableObjects/Level/10/SpawnFruit_Mango.asset
+  artifactKey: Guid(5bb378885dfd0304e96e4d61e00b6505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/10/SpawnFruit_Mango.asset using Guid(5bb378885dfd0304e96e4d61e00b6505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6715d87885b5720e48148e60dadb92ea') in 0.001709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.804614 seconds.
+  path: Assets/ScriptableObjects/Level/11/Level 11.asset
+  artifactKey: Guid(6d88cdf4fcf198b44bfcbac3ef257c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/11/Level 11.asset using Guid(6d88cdf4fcf198b44bfcbac3ef257c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245feb0feb01236808ef9fdf2f2438d5') in 0.005769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/11/SpawnFruit_Kivi.asset
+  artifactKey: Guid(e85100f9ece9fae4da4fb1f6fc16a110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/11/SpawnFruit_Kivi.asset using Guid(e85100f9ece9fae4da4fb1f6fc16a110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b47c466d34ef071856fa6443c5793b7') in 0.004717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/11/SpawnObjects.asset
+  artifactKey: Guid(f4bbe002c046ce144bc778663553ee66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/11/SpawnObjects.asset using Guid(f4bbe002c046ce144bc778663553ee66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5880f40a9dea326fa41e4ae3c7d3cc3') in 0.002586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ScriptableObjects/Level/11/SpawnDamager_Tree.asset
+  artifactKey: Guid(9400794b626038d48901cbb3de73f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/11/SpawnDamager_Tree.asset using Guid(9400794b626038d48901cbb3de73f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89556ac0f397cdfb52b01161ae931a3b') in 0.001598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.085802 seconds.
+  path: Assets/ScriptableObjects/Level/12/Recipe.asset
+  artifactKey: Guid(dcbe1c6dab990794dba1ad9f59cdabb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/12/Recipe.asset using Guid(dcbe1c6dab990794dba1ad9f59cdabb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9da509ce454191414bdc21bad66483') in 0.002568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ScriptableObjects/Level/12/SpawnFruit_Melon.asset
+  artifactKey: Guid(67382bf4fee144247b5d95f84877d6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/12/SpawnFruit_Melon.asset using Guid(67382bf4fee144247b5d95f84877d6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b7d9da2d5a14f356dbb554b5b689b8') in 0.001843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/12/SpawnFruit_Kivi.asset
+  artifactKey: Guid(1b52bc69a7d48bd478ae4f0ed6a60481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/12/SpawnFruit_Kivi.asset using Guid(1b52bc69a7d48bd478ae4f0ed6a60481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a603d25edccae5805e0e1653c8af7481') in 0.001968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.048511 seconds.
+  path: Assets/ScriptableObjects/Level/13/Recipe.asset
+  artifactKey: Guid(771e0345bb4ce8446a668e086f9412db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/13/Recipe.asset using Guid(771e0345bb4ce8446a668e086f9412db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2374a83634919d17c2a23770ffc63506') in 0.001881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ScriptableObjects/Level/13/SpawnFruit_Bananna.asset
+  artifactKey: Guid(278c86906d83157479ebb94699778991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/13/SpawnFruit_Bananna.asset using Guid(278c86906d83157479ebb94699778991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27c42b1dc5074782fdaef4fc0ce0ec1') in 0.002075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ScriptableObjects/Level/13/SpawnFruit_Apple.asset
+  artifactKey: Guid(1ecc222077ef4504d911467b13a75484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/13/SpawnFruit_Apple.asset using Guid(1ecc222077ef4504d911467b13a75484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d9cc047eff5bbba62a80363e4d1c7c') in 0.001730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ScriptableObjects/Level/13/SpawnDamager_Tree.asset
+  artifactKey: Guid(60016b14c2eb69a4a844750f160a7637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/13/SpawnDamager_Tree.asset using Guid(60016b14c2eb69a4a844750f160a7637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d17262286b1e920bd9e2ca6502ef59a') in 0.001582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.054818 seconds.
+  path: Assets/ScriptableObjects/Level/14/Recipe.asset
+  artifactKey: Guid(57aa9aca256b6854fabf900b07600d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/14/Recipe.asset using Guid(57aa9aca256b6854fabf900b07600d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0109bbdedaf1cb7f316ce744bdf5c126') in 0.001824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ScriptableObjects/Level/14/SpawnObjects.asset
+  artifactKey: Guid(fa33862547639334091da13e3a399deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/14/SpawnObjects.asset using Guid(fa33862547639334091da13e3a399deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67482031ee0f758ec62ea3cd04dd3e5') in 0.002555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ScriptableObjects/Level/14/SpawnDamager_Ice.asset
+  artifactKey: Guid(08e95323adb6dc741bdf4a5a705afed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/14/SpawnDamager_Ice.asset using Guid(08e95323adb6dc741bdf4a5a705afed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c58206d5a877e298c2f53fabbfeca45') in 0.001783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/14/SpawnFruit_Bananna.asset
+  artifactKey: Guid(453e05ff9ffbd3e47a380d3d1bb908c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/14/SpawnFruit_Bananna.asset using Guid(453e05ff9ffbd3e47a380d3d1bb908c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5380910e4b17a11b17a6a4e8ef7ec0a8') in 0.001597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.317316 seconds.
+  path: Assets/ScriptableObjects/Level/15/PartRecipe_Watermelon.asset
+  artifactKey: Guid(4085571bc5cf16343905f08952a4f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/15/PartRecipe_Watermelon.asset using Guid(4085571bc5cf16343905f08952a4f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d3b31e5dcd9aa8325a381fd80441fd') in 0.001606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ScriptableObjects/Level/15/SpawnFruit_Orange.asset
+  artifactKey: Guid(f7cb7ff5418c1104e99d61fc620a2a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/15/SpawnFruit_Orange.asset using Guid(f7cb7ff5418c1104e99d61fc620a2a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf8b7041159f6c8e0c3d1fc8bf5a226') in 0.001700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ScriptableObjects/Level/15/SpawnFruit_Apple.asset
+  artifactKey: Guid(556dd3b0d506a6d4e9e86484193538d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/15/SpawnFruit_Apple.asset using Guid(556dd3b0d506a6d4e9e86484193538d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0396adce0a0d80cb5b5e64442be501a9') in 0.001527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ScriptableObjects/Level/15/Recipe.asset
+  artifactKey: Guid(4c7c19596bb14fe498873aa4cd91391b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/15/Recipe.asset using Guid(4c7c19596bb14fe498873aa4cd91391b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726f534936adc1f33bf13a0b7097277b') in 0.002022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ScriptableObjects/Level/15/SpawnDamager_Tree.asset
+  artifactKey: Guid(395a666dd67a98349a9ae499dab4cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Level/15/SpawnDamager_Tree.asset using Guid(395a666dd67a98349a9ae499dab4cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58cc744b1ed59673b40e5d6e29fa7fb6') in 0.001761 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

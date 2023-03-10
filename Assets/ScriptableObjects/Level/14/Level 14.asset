@@ -16,3 +16,4 @@ MonoBehaviour:
   DataSpawnObjects: {fileID: 11400000, guid: fa33862547639334091da13e3a399deb, type: 2}
   TimeSpawn: 0.6
   TimeLevel: 60
+  CountLines: 6
