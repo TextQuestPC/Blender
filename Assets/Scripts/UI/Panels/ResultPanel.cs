@@ -12,19 +12,20 @@ public class ResultPanel : MonoBehaviour
 
     private const float timeHide = 0.3f;
 
-    [SerializeField] private GameObject textResultWin;
     [SerializeField] private GameObject textResultLoseTree;
     [SerializeField] private GameObject textResultLoseTime;
 
-    //private const string winText = "Победа!";
-    private const string loseTextTree = "Проиграл. Деревья блендер не сможет порезать.";
-    private const string loseTextTime = "Проиграл. Время вышло.";
+    private const string winTextRu = "Победа!", winTextEn = "Win!";
+    private const string loseTextTreeRu = "Проиграл. Деревья блендер не сможет порезать.", loseTextTreeEn = "Lose. The blender will not be able to cut trees.";
+    private const string loseTextTimeRu = "Проиграл. Время вышло.", loseTextTimeEn = "Lose. Time out.";
     //private const string loseTextTime2 = "Проиграл. Следи за счётчиком времени!";
 
     public void ShowWinPanel()
     {
-        //textResult.text = winText;
-        textResultWin.SetActive(true);
+        bool isRu = YandexGame.savesData.language == "ru";        
+
+        textResult.gameObject.SetActive(true);
+
         textResultLoseTree.SetActive(false);
         textResultLoseTime.SetActive(false);
 
@@ -32,43 +33,70 @@ public class ResultPanel : MonoBehaviour
         restartLevelButton.SetActive(false);
 
         background.SetActive(true);
+
+        if (isRu)
+        {
+            textResult.text = winTextRu;
+        }
+        else
+        {
+            textResult.text = winTextEn;
+        }
     }
 
     public void ShowLosePanel()
     {
+        background.SetActive(true);
+
         ChangeLoseText();
 
         nextLevelButton.SetActive(false);
         restartLevelButton.SetActive(true);
-
-        background.SetActive(true);
     }
 
     private void ChangeLoseText()
     {
+        bool isRu = YandexGame.savesData.language == "ru";
         TypeLoseLevel typeLose = ManagerMain.Instance.GetTypeLoseLevel;
         string text = "";
 
         if (typeLose == TypeLoseLevel.DamagerTree)
         {
-            text = loseTextTree;
-            textResultWin.SetActive(false);
+            textResult.gameObject.SetActive(false);
+
             textResultLoseTree.SetActive(true);
             textResultLoseTime.SetActive(false);
+
+            if (isRu)
+            {
+                text = loseTextTreeRu;
+            }
+            else
+            {
+                text = loseTextTreeEn;
+            }
         }
         else if (typeLose == TypeLoseLevel.EndTimeLevel)
         {
-            text = loseTextTime;
-            textResultWin.SetActive(false);
+            textResult.gameObject.SetActive(false);
+
             textResultLoseTree.SetActive(false);
             textResultLoseTime.SetActive(true);
+
+            if (isRu)
+            {
+                text = loseTextTimeRu;
+            }
+            else
+            {
+                text = loseTextTimeEn;
+            }
         }
 
         if (text == "")
         {
             Debug.LogError($"Не присвоено значение textResult. Тип проигыши {typeLose}");
         }
-        //textResult.text = text;
     }
 
     public void HidePanel()
